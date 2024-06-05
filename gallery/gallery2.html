@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .navheader {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .allgallery {
+
+            height: 110vh;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .gallery {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotate 35s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: perspective(800px) rotateY(0deg);
+            }
+
+            to {
+                transform: perspective(800px) rotateY(360deg);
+            }
+        }
+
+        .gallery span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i) * 30deg)) translateZ(400px);
+        }
+
+        .gallery span img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="./nav/nav.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="navheader">
+        <div class="allnav">
+            <div class="navlogo">
+                <img class="logo">
+                <img src="./nav/logo.png" alt="" height="40px">
+            </div>
+            <div class="topnav" style="font-family: 'Courier New', Courier, monospace;">
+                <ul>
+                    <div class="navcon">
+                        <a href="../full page/index.html">Home
+                        </a>
+                    </div>
+                    <div class="navcon">
+                        <a href="../About Me/About Me.html">About
+                            Me</a>
+                        <div class="navdropdown">
+                            <a href="">link1</a>
+                            <a href="">link2</a>
+                            <a href="">link3</a>
+                            <a href="">link4</a>
+
+                        </div>
+
+                    </div>
+                    <div class="navcon">
+                        <a href="../contact me/contact me.html">Contact Me </a>
+                    </div>
+                    <div class="navcon">
+                        <a href="./gallery2.html">Gallery
+                        </a>
+
+
+                    </div>
+                    <div class="navcon">
+                        <a href=""></a>
+
+
+                    </div>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="../sign/sign.html"><img src="./nav/user.png" alt="" height="40px"></a>
+            </div>
+        </div>
+    </header>
+    <h1 style="text-align: center; color: aliceblue;margin-top: 30px;">
+        that's my picture
+    </h1>
+    <div class="allgallery">
+        <div class="gallery">
+            <span style="--i:1">
+                <img src="../gallery/img/kamal1.jpg" alt="" />
+            </span>
+            <span style="--i:2">
+                <img src="../gallery/img/kamal2.jpg" alt="" />
+            </span>
+            <span style="--i:3">
+                <img src="../gallery/img/kamal3.jpg" alt="" />
+            </span>
+            <span style="--i:4">
+                <img src="../gallery/img/kamal4.jpg" alt="" />
+            </span>
+            <span style="--i:5">
+                <img src="../gallery/img/kamal5.jpg" alt="" />
+            </span>
+            <span style="--i:6">
+                <img src="../gallery/img/kamal6.jpg" alt="" />
+            </span>
+            <span style="--i:7">
+                <img src="../gallery/img/kamal7.jpeg" alt="" />
+            </span>
+            <span style="--i:8">
+                <img src="../gallery/img/kamal8.jpeg" alt="" />
+            </span>
+            <span style="--i:9">
+                <img src="../gallery/img/kamal9.jpeg" alt="" />
+            </span>
+            <span style="--i:10">
+                <img src="../gallery/img/kamal10.jpeg" alt="" />
+            </span>
+            <span style="--i:11">
+                <img src="../gallery/img/kamal11.jpeg" alt="" />
+            </span>
+            <span style="--i:12">
+                <img src="../gallery/img/kamal12.jpeg" alt="" />
+            </span>
+            <span style="--i:13">
+                <img src="../gallery/img/kamal13.jpeg" alt="" />
+            </span>
+            <span style="--i:14">
+                <img src="../gallery/img/kamal114.jpeg" alt="" />
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
