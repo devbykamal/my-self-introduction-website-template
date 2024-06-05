@@ -44,7 +44,7 @@ header {
     padding: 10px;
 }
 
-.allnav:hover .navdropdown {
+.navcon:hover .navdropdown {
     display: flex;
 }
 
@@ -59,7 +59,8 @@ header {
     padding-left: 20px;
     display: flex;
 }
-body{
+
+body {
     background-image: url(./imgnav.jpg);
     background-size: cover;
 }
